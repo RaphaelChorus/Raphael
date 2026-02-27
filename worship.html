@@ -1,1 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>라파엘코러스 워십 예배순서</title>
 
+<style>
+  :root{
+    --frame-color:#c9a646;
+    --text-color:#222;
+  }
+
+  body{
+    margin:0;
+    font-family: "Noto Serif KR", serif;
+    background:#f8f6f2;
+    color:var(--text-color);
+    line-height:1.7;
+  }
+
+  .page{
+    max-width:800px;
+    margin:40px auto;
+    background:white;
+    padding:60px 50px;
+    position:relative;
+  }
+
+  /* 장식 프레임 */
+  .page::before,
+  .page::after{
+    content:"";
+    position:absolute;
+    inset:15px;
+    border:2px solid var(--frame-color);
+    pointer-events:none;
+  }
+
+  .page::after{
+    inset:25px;
+    border:1px solid var(--frame-color);
+  }
+
+  header{
+    text-align:center;
+    margin-bottom:40px;
+  }
+
+  .logo{
+    max-width:320px;
+    height:auto;
+    margin-bottom:20px;
+  }
+
+  h1{
+    font-size:1.8rem;
+    margin:0;
+    letter-spacing:0.08em;
+  }
+
+  h2{
+    font-size:1.2rem;
+    margin-top:40px;
+    border-bottom:1px solid #ddd;
+    padding-bottom:5px;
+  }
+
+  ol{
+    padding-left:20px;
+  }
+
+  li{
+    margin:8px 0;
+  }
+
+  .center{
+    text-align:center;
+  }
+
+  .hymn{
+    margin-top:15px;
+    padding:15px;
+    background:#faf9f6;
+    border-left:4px solid var(--frame-color);
+  }
+
+  footer{
+    margin-top:50px;
+    text-align:center;
+    font-style:italic;
+  }
+
+  /* 스크린리더 전용 텍스트 */
+  .sr-only{
+    position:absolute;
+    width:1px;
+    height:1px;
+    padding:0;
+    margin:-1px;
+    overflow:hidden;
+    clip:rect(0,0,0,0);
+    white-space:nowrap;
+    border:0;
+  }
+
+  @media print{
+    body{
+      background:white;
+    }
+    .page{
+      margin:0;
+      box-shadow:none;
+    }
+  }
+</style>
+</head>
+
+<body>
+<main class="page">
+
+<header>
+  <img src="logo.png" alt="라파엘코러스 로고 Raphael Chorus" class="logo"/>
+  <h1>라파엘코러스 워십</h1>
+  <p>예배 순서</p>
+</header>
+
+<section aria-labelledby="order-title">
+<h2 id="order-title">예배 순서</h2>
+
+<ol>
+  <li>묵도</li>
+  <li>신앙고백 (다같이)</li>
+  <li>찬송 272장 (다같이)</li>
+  <li>대표기도 (알토 김명원)</li>
+  <li>찬양 (최주일 목사님)</li>
+  <li>성경봉독: 로마서 8장 28절–30절 (다같이)</li>
+  <li>찬양: 그의 빛 안에 살면 (라파엘코러스)</li>
+  <li>설교 (목사님)</li>
+  <li>찬양: 성 프란시스코의 기도 (라파엘코러스)</li>
+  <li>찬양 (최주일 목사님)</li>
+  <li>찬송: 주의 기도 (다같이)</li>
+</ol>
+</section>
+
+<section aria-labelledby="hymn272-title">
+<h2 id="hymn272-title">찬송 272장</h2>
+
+<div class="hymn">
+<p>1. 고통의 멍에 벗으려고 예수께로 나갑니다  
+자유와 기쁨 베푸시는 주께로 갑니다  
+병든 내 몸이 튼튼하고 빈궁한 삶이 부해지며  
+죄악을 벗어 버리려고 주께로 갑니다</p>
+
+<p>2. 낭패와 실망 당한 뒤에 예수께로 나갑니다  
+십자가 은혜 받으려고 주께로 갑니다  
+슬프던 마음 위로받고 이생의 풍파 잔잔하며  
+영광의 찬송 부르려고 주께로 갑니다</p>
+
+<p>3. 교만한 맘을 내버리고 예수께로 나갑니다  
+복되신 말씀 따르려고 주께로 갑니다  
+실망한 이 몸 힘을 얻고 예수의 크신 사랑 받아  
+하늘의 기쁨 맛보려고 주께로 갑니다</p>
+
+<p>4. 죽음의 길을 벗어나서 예수께로 나갑니다  
+영원한 집을 바라보고 주께로 갑니다  
+멸망의 포구 헤어나와 평화의 나라 다다라서  
+영광의 주를 뵈오려고 주께로 갑니다</p>
+</div>
+</section>
+
+<footer>
+<p>“우리가 알거니와 하나님을 사랑하는 자 곧 그의 뜻대로 부르심을 입은 자들에게는  
+모든 것이 합력하여 선을 이루느니라” (롬 8:28)</p>
+</footer>
+
+</main>
+</body>
+</html>
