@@ -373,7 +373,47 @@ footer p{
     color:#888;
 
 }
+.quickmenu{
 
+    display:flex;
+
+    justify-content:center;
+
+    gap:18px;
+
+    padding:16px;
+
+    background:#151515;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+}
+.quickmenu a{
+
+    color:#f2f2f2;
+
+    text-decoration:none;
+
+    padding:8px 16px;
+
+    border-radius:30px;
+
+    transition:0.3s;
+
+    font-size:1rem;
+
+}
+.quickmenu a:hover{
+
+    background:#6f42c1;
+
+    color:white;
+
+}
 /* ---------------- MOBILE ---------------- */
 
 @media(max-width:768px){
