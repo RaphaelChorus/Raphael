@@ -1,1 +1,414 @@
+/* =======================================================
+   Raphael Chorus Digital Program
+   Version 1.0
+======================================================= */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:#0F1115;
+
+    color:#F3F3F3;
+
+    font-family:"Noto Sans KR",sans-serif;
+
+    font-size:20px;
+
+    line-height:1.8;
+
+}
+
+/* ---------------- HERO ---------------- */
+
+.hero{
+
+    position:relative;
+
+    text-align:center;
+
+    padding:80px 20px;
+
+}
+
+.poster{
+
+    width:100%;
+
+    max-width:900px;
+
+    border-radius:20px;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.45);
+
+}
+
+.hero-text{
+
+    margin-top:50px;
+
+}
+
+.hero h1{
+
+    font-size:3rem;
+
+    color:#ffffff;
+
+    margin-bottom:15px;
+
+    font-weight:700;
+
+}
+
+.hero h2{
+
+    color:#D4AF37;
+
+    letter-spacing:4px;
+
+    margin-bottom:15px;
+
+}
+
+.hero h3{
+
+    color:#dddddd;
+
+    margin-bottom:25px;
+
+    font-weight:400;
+
+}
+
+.hero p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:#bbbbbb;
+
+}
+
+/* ---------------- BUTTON ---------------- */
+
+.donate{
+
+    display:inline-block;
+
+    margin-top:40px;
+
+    padding:18px 40px;
+
+    background:#D4AF37;
+
+    color:#111111;
+
+    text-decoration:none;
+
+    border-radius:50px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.donate:hover{
+
+    background:white;
+
+    transform:translateY(-3px);
+
+}
+
+/* ---------------- SECTION ---------------- */
+
+section{
+
+    width:92%;
+
+    max-width:1000px;
+
+    margin:auto;
+
+    padding:80px 0;
+
+}
+
+section h2{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+    font-size:2.2rem;
+
+    color:#D4AF37;
+
+}
+
+/* ---------------- GUEST ---------------- */
+
+.guest-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:40px;
+
+}
+
+.guest-card{
+
+    background:#1B2027;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    padding:30px;
+
+    transition:.3s;
+
+}
+
+.guest-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.guest-card img{
+
+    width:180px;
+
+    height:180px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    margin-bottom:20px;
+
+}
+
+.guest-card h3{
+
+    color:white;
+
+    margin-bottom:10px;
+
+}
+
+.guest-card p{
+
+    color:#cccccc;
+
+}
+
+/* ---------------- PROGRAM ---------------- */
+
+.program p{
+
+    text-align:center;
+
+    color:#bbbbbb;
+
+}
+
+/* ---------------- SONG ---------------- */
+
+details{
+
+    background:#1A1F25;
+
+    border-radius:14px;
+
+    margin-bottom:18px;
+
+    overflow:hidden;
+
+    border:1px solid #2d333b;
+
+}
+
+summary{
+
+    cursor:pointer;
+
+    padding:22px;
+
+    font-size:1.15rem;
+
+    font-weight:bold;
+
+    list-style:none;
+
+}
+
+summary:hover{
+
+    background:#252B34;
+
+}
+
+.song{
+
+    padding:30px;
+
+}
+
+.song h3{
+
+    color:#D4AF37;
+
+    margin-bottom:12px;
+
+    margin-top:20px;
+
+}
+
+.song p{
+
+    color:#DDDDDD;
+
+}
+
+/* ---------------- LIST ---------------- */
+
+ul{
+
+    margin-top:20px;
+
+    padding-left:25px;
+
+}
+
+li{
+
+    margin-bottom:10px;
+
+}
+
+/* ---------------- HR ---------------- */
+
+hr{
+
+    width:80%;
+
+    margin:auto;
+
+    border:none;
+
+    border-top:1px solid #444;
+
+}
+
+/* ---------------- MEMBERS ---------------- */
+
+.members{
+
+    text-align:center;
+
+}
+
+.members p{
+
+    color:#cccccc;
+
+}
+
+/* ---------------- FOOTER ---------------- */
+
+footer{
+
+    text-align:center;
+
+    padding:80px 20px;
+
+    background:#0A0D10;
+
+}
+
+footer p{
+
+    margin-top:25px;
+
+    color:#888;
+
+}
+
+/* ---------------- MOBILE ---------------- */
+
+@media(max-width:768px){
+
+body{
+
+font-size:19px;
+
+}
+
+.hero{
+
+padding:40px 15px;
+
+}
+
+.hero h1{
+
+font-size:2rem;
+
+}
+
+.hero h2{
+
+font-size:1.2rem;
+
+}
+
+.hero h3{
+
+font-size:1.1rem;
+
+}
+
+.poster{
+
+border-radius:12px;
+
+}
+
+section{
+
+padding:50px 0;
+
+}
+
+summary{
+
+font-size:1.05rem;
+
+padding:18px;
+
+}
+
+.donate{
+
+width:100%;
+
+max-width:340px;
+
+}
+
+}
